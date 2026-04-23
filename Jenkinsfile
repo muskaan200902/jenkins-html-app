@@ -2,11 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Build Docker Image') {
+        stage('Build Stage') {
             steps {
-                script {
-                    docker.build("my-html-app")
-                }
+                echo 'Building HTML app...'
             }
         }
     }
